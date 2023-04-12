@@ -26,4 +26,4 @@ The project contains three GOAP solutions.
 4. Add actions through Agent.AddAction(action)
 5. Within an instance of the class GOAPAgent call Agent.Plan(StringBuilder, cancellable)
 
-A full example is provided in Assets/Scripts/GOAP_Collections/Native/Agents
+**A full example is provided in Assets/Scripts/GOAP_Collections/Native/Agents**
