@@ -1,0 +1,20 @@
+{
+    "name": "GOAP_DOTS",
+    "rootNamespace": "",
+    "references": [
+        "Unity.Collections",
+        "Unity.Mathematics",
+        "Global",
+        "Unity.Entities",
+        "Unity.Burst"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}

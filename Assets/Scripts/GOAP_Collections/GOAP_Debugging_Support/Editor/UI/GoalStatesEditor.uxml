@@ -1,0 +1,36 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/GOAP_Collections/GOAP_Debugging_Support/Editor/UI/GoalsStatesEditor.uss?fileID=7433441132597879392&amp;guid=3589acdf549252a4e8db96e00fbe4b23&amp;type=3#GoalsStatesEditor" />
+    <uie:Toolbar name="toolbar">
+        <uie:ToolbarButton text="Create new" display-tooltip-when-elided="true" name="create-button" focusable="false" />
+        <uie:ToolbarSpacer name="spacer" picking-mode="Ignore" />
+        <uie:ToolbarMenu tabindex="-1" display-tooltip-when-elided="true" text="Configurators " name="configurators-dropdown" />
+        <uie:ToolbarSpacer name="spacer" />
+        <uie:ToolbarButton text="Save Changes" display-tooltip-when-elided="true" name="save-button" focusable="false" />
+        <uie:ToolbarSpacer name="spacer" picking-mode="Ignore" />
+        <uie:ToolbarButton text="Delete Configuration" display-tooltip-when-elided="true" name="deleteobject-button" focusable="false" />
+        <uie:ToolbarSpacer name="spacer" />
+        <ui:Label tabindex="-1" text="No Configuration Selected" display-tooltip-when-elided="true" name="current-configuration" picking-mode="Ignore" style="background-color: rgb(40, 40, 40); border-top-left-radius: 3px; border-bottom-left-radius: 3px; border-top-right-radius: 3px; border-bottom-right-radius: 3px; border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; margin-left: 1px; margin-right: 1px; margin-top: 1px; margin-bottom: 1px; border-left-color: rgb(32, 32, 32); border-right-color: rgb(32, 32, 32); border-top-color: rgb(32, 32, 32); border-bottom-color: rgb(32, 32, 32);" />
+    </uie:Toolbar>
+    <ui:VisualElement name="goaleditor" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+        <SplitView name="goals-configurator" fixed-pane-initial-dimension="250">
+            <SplitView orientation="Vertical" name="collections-containers" fixed-pane-initial-dimension="200" style="flex-direction: column; width: 200px;">
+                <ui:VisualElement name="blackboard-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                    <ui:Label tabindex="-1" text="Blackboards" display-tooltip-when-elided="true" name="blackboards-label" picking-mode="Ignore" style="-unity-font-style: normal; font-size: 14px; background-color: rgb(42, 42, 42);">
+                        <ui:Button text="+" display-tooltip-when-elided="true" name="add-blackboard" focusable="false" style="align-self: flex-end;" />
+                    </ui:Label>
+                    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="blackboards-items" />
+                </ui:VisualElement>
+                <ui:VisualElement name="goals-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 100%;">
+                    <ui:Label tabindex="-1" text="Goals" display-tooltip-when-elided="true" name="goals-label" picking-mode="Ignore" style="font-size: 14px; background-color: rgb(42, 42, 42);">
+                        <ui:Button text="+" display-tooltip-when-elided="true" name="add-goal" focusable="false" style="align-self: flex-end;" />
+                    </ui:Label>
+                    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="goals-items" />
+                </ui:VisualElement>
+            </SplitView>
+            <InspectorView name="inspector">
+                <ui:Label tabindex="-1" text="Inspector" display-tooltip-when-elided="true" name="inspector-label" picking-mode="Ignore" style="font-size: 14px; background-color: rgb(42, 42, 42);" />
+                <ui:VisualElement name="inspector-container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);" />
+            </InspectorView>
+        </SplitView>
+    </ui:VisualElement>
+</ui:UXML>

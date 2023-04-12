@@ -1,0 +1,20 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/GOAP_Collections/GOAP_Debugging_Support/Editor/UI/StateEditor.uss?fileID=7433441132597879392&amp;guid=5b99871e75a5bb54aa1c2dcbaf394485&amp;type=3#StateEditor" />
+    <ui:VisualElement name="state-container" style="flex-grow: 0; background-color: rgba(42, 42, 42, 0.2); flex-direction: row; border-left-width: 2px; border-right-width: 2px; border-top-width: 2px; border-bottom-width: 2px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-left-color: rgb(31, 31, 31); border-right-color: rgb(31, 31, 31); border-top-color: rgb(31, 31, 31); border-bottom-color: rgb(31, 31, 31);">
+        <ui:VisualElement name="state" style="flex-grow: 0; margin-left: 2px; margin-right: 2px; margin-top: 2px; margin-bottom: 2px; width: 90%;">
+            <ui:Label tabindex="-1" text="State" display-tooltip-when-elided="true" name="label" style="font-size: 12px; -unity-font-style: normal; padding-bottom: 5px; margin-top: 5px; padding-left: 2px;" />
+            <ui:VisualElement name="blackboard-container" picking-mode="Ignore" style="flex-grow: 0; flex-direction: column; border-left-color: rgb(31, 31, 31); border-right-color: rgb(31, 31, 31); border-top-color: rgb(31, 31, 31); border-bottom-color: rgb(31, 31, 31); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px;">
+                <ui:TextField picking-mode="Ignore" label="Identifier" value="State key" readonly="true" name="state-key" />
+                <ui:EnumField label="Value Type" type="GOAP_Native_Debugging.Blackboard+ValueType, Assembly-CSharp" name="type-value" focusable="false" picking-mode="Ignore" />
+            </ui:VisualElement>
+            <ui:VisualElement name="value-container" picking-mode="Ignore" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0); padding-top: 15px; height: 50px;">
+                <ui:Toggle label="Bool" value="true" name="bool" style="position: absolute; visibility: hidden; max-width: 450px;" />
+                <ui:IntegerField label="Int" value="0" name="int" style="position: absolute; visibility: hidden; max-width: 450px;" />
+                <ui:FloatField label="Float" value="0" name="float" style="position: absolute; visibility: hidden; max-width: 450px;" />
+                <ui:TextField picking-mode="Ignore" label="String" name="string" style="visibility: hidden; position: absolute; max-width: 450px;" />
+                <ui:Vector3Field label="Vector" name="vector" style="visibility: hidden; position: absolute; max-width: 450px;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:Button display-tooltip-when-elided="true" name="delete-button" focusable="false" style="margin-left: 1px; margin-right: 1px; padding-left: 2px; padding-right: 2px; border-top-left-radius: 5px; border-bottom-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; background-color: rgb(142, 73, 73); width: 45px; height: 45px; align-self: center;" />
+    </ui:VisualElement>
+</ui:UXML>

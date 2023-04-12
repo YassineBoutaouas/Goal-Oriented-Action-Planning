@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="True">
+    <Style src="project://database/Assets/Scripts/GOAP_Collections/GOAP_Debugging_Support/Editor/UI/BlackboardEditor.uss?fileID=7433441132597879392&amp;guid=68aaa4064cee7fa478857f33062a28a7&amp;type=3#BlackboardEditor" />
+    <ui:Label tabindex="-1" text="Blackboard" display-tooltip-when-elided="true" name="title" picking-mode="Ignore" style="-unity-font-style: bold; font-size: 16px; -unity-text-align: upper-center; background-color: rgb(40, 40, 40); color: rgb(182, 182, 182);" />
+    <ui:VisualElement name="warning-message" style="flex-grow: 0; background-color: rgba(0, 0, 0, 0);" />
+    <ui:ScrollView scroll-deceleration-rate="0,135" elasticity="0,1" name="entries" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="AlwaysVisible" picking-mode="Ignore" style="flex-grow: 1; padding-bottom: 10px; padding-top: 5px; max-height: 600px;" />
+    <ui:VisualElement name="button-container" picking-mode="Ignore" style="flex-grow: 0; background-color: rgb(42, 42, 42); flex-direction: row; height: 30px;">
+        <ui:Button text="Add Entry" display-tooltip-when-elided="true" name="add-button" focusable="false" style="flex-grow: 1; background-color: rgb(75, 75, 75);" />
+        <ui:Button text="Clear Entries" display-tooltip-when-elided="true" name="clear-button" focusable="false" style="flex-grow: 1; background-color: rgb(75, 75, 75);" />
+    </ui:VisualElement>
+</ui:UXML>

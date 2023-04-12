@@ -1,0 +1,37 @@
+.unity-button:hover {
+    background-image: url('project://database/Packages/com.unity.entities/Editor%20Default%20Resources/icons/dark/Remove/Remove@2x.png?fileID=2800000&guid=6e1ab5131d6d92541b3bf9c945b496ef&type=3#Remove@2x');
+    background-color: rgb(118, 58, 58);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    border-left-color: rgb(255, 0, 0);
+    border-right-color: rgb(255, 0, 0);
+    border-top-color: rgb(255, 0, 0);
+    border-bottom-color: rgb(255, 0, 0);
+}
+
+.unity-button:active {
+    background-color: rgb(70, 0, 0);
+    border-left-color: rgb(152, 0, 0);
+    border-right-color: rgb(152, 0, 0);
+    border-top-color: rgb(152, 0, 0);
+    border-bottom-color: rgb(152, 0, 0);
+    border-left-width: 1px;
+    border-right-width: 1px;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+}
+
+.dark-element {
+    background-color: rgb(49, 49, 49);
+}

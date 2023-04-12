@@ -1,0 +1,16 @@
+{
+    "name": "GOAP_Native",
+    "rootNamespace": "",
+    "references": [
+        "GUID:a59e362751bbfac4a9e9d81d24461481"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
