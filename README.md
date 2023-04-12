@@ -17,7 +17,7 @@ The project contains three GOAP solutions.
 - Utility classes such as a priority queue .../Utility
 - Example actions and agents .../Agents
 
-###In order create and extend an agent:
+### In order create and extend an agent:
 1. Create a class 'Action' : Action<Agent>
     - Provide preconditions and effects - e.g.: Preconditions.Add("Hungry", false)
 2. Create a class of type Agent
