@@ -4,7 +4,7 @@ The project was developed within the scope of a bachelor thesis as part of the s
 Visual assets such as 3D models, textures etc. were developed by third party.
 
 ## Directories/Folder structure
-The project contains three GOAP solutions fo the Unity Engine:
+The project contains three GOAP solutions for the Unity Engine:
 - Solution no.1 runs on the main thread - used by the sample agent.
     - .../Assets/Scripts/GOAP_Collections/Native
 - Solution no.2 uses the job system contained in the Unity ECS.
