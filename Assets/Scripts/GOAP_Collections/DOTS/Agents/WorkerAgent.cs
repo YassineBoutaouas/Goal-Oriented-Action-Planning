@@ -114,8 +114,6 @@ namespace GOAP_DOTS
             defaultWorldState.Dispose();
 
             base.Dispose();
-
-            Debug.Log("Disposed Agent");
         }
     }
 }
