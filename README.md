@@ -14,16 +14,16 @@ The project contains three GOAP solutions for the Unity Engine:
 
 ### Important directories for each solution
 - Base classes to run GOAP .../Base
-- Utility classes such as a priority queue .../Utility
+- Utility classes such as priority queues .../Utility
 - Example actions and agents .../Agents
 
-## In order create and extend an agent:
+## In order to create and extend an agent:
 1. Create a class 'Action' : Action<Agent>
     - Provide preconditions and effects - e.g.: Preconditions.Add("Hungry", false)
 2. Create a class of type Agent
 3. Provide one or more instances of class WorldState through Agent.CreateWorldState(params) or Agent.CreateGoal(params) to represent the current world state and goals
     - e.g.: worldStateInstance.Add("Hungry", true) | eatGoal.Add("Hungry", false)
 4. Add actions through Agent.AddAction(action)
-5. Within an instance of the class GOAPAgent call Agent.Plan(StringBuilder, cancellable)
+5. Within an instance of the class GOAPAgent call Agent.Plan(StringBuilder, bool)
 
 **A full example is provided in Assets/Scripts/GOAP_Collections/Native/Agents**
