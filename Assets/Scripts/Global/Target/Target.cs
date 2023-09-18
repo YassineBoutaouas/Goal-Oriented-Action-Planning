@@ -1,6 +1,4 @@
 using System;
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Target : MonoBehaviour, IEquatable<Target>
@@ -12,8 +10,6 @@ public class Target : MonoBehaviour, IEquatable<Target>
 
     public bool Occupy()
     {
-        //if (IsOccupied) return false;
-
         IsOccupied = true;
 
         return true;

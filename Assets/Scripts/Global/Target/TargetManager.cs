@@ -1,9 +1,7 @@
 using System;
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static TargetManager;
-using static UnityEngine.GraphicsBuffer;
 
 #if UNITY_EDITOR
 using UnityEditor;
@@ -17,10 +15,7 @@ public class TargetManager : MonoBehaviour
 
     public enum TargetType { Mine, Crate, Workbench, Bed, None }
 
-    public void Awake()
-    {
-        Instance = this;
-    }
+    public void Awake() { Instance = this; }
 
     public Target TryGetTarget(TargetType type)
     {
