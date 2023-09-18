@@ -28,7 +28,8 @@ The project contains three GOAP solutions for the Unity Engine:
 
 **A full example is provided in Assets/Scripts/GOAP_Collections/Native/Agents**
 
-## Full list of third party assets
+
+### Full list of third party assets
 
 - Character: Starter Assets - [See](https://assetstore.unity.com/packages/essentials/starter-assets-third-person-character-controller-urp-196526)
 - Mine: Low poly styled rocks - [See](https://assetstore.unity.com/packages/3d/props/exterior/low-poly-styled-rocks-43486)
