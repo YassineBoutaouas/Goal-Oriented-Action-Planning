@@ -6,7 +6,6 @@ namespace GOAP_DOTS
     public class DoMining : Action<Worker>
     {
         private Animator _animator;
-        private Transform _appleTree;
 
         private float _miningDuration;
 
@@ -14,7 +13,6 @@ namespace GOAP_DOTS
         {
             _animator = animator;
             _miningDuration = miningDuration;
-            _appleTree = appleTree;
 
             Preconditions.Add("AtMine", true);
 
@@ -26,7 +24,6 @@ namespace GOAP_DOTS
         {
             yield return null;
 
-            //_contextObject._controller.transform.rotation = Quaternion.LookRotation(Vector3.Scale((_appleTree.position - _contextObject._controller.transform.position).normalized, Vector3.right + Vector3.forward));
             _animator.CrossFade("Mining", 0.1f);
         }
 

@@ -28,11 +28,11 @@ namespace GOAP_Native
             //------------------------------Add States-------------------------------------------
             WorldState defaultWorldState = CreateWorldState("Default", WorldState.True, () => 1);
 
-            defaultWorldState.Add("IsMining", false, null); //IsMining
-            defaultWorldState.Add("CurrentTarget", (int)TargetManager.TargetType.None, TargetType); //GoTo(procedural target)
-            defaultWorldState.Add("Stamina", Stamina, GetStamina); //IsResting
+            defaultWorldState.Add("IsMining", false, null);
+            defaultWorldState.Add("CurrentTarget", (int)TargetManager.TargetType.None, TargetType);
+            defaultWorldState.Add("Stamina", Stamina, GetStamina);
             defaultWorldState.Add("ItemsCarried", ItemsCarried, GetItemsCarried);
-            defaultWorldState.Add("AxeSharpness", AxeSharpness, GetAxeSharpness); //IsSharpeningAxe
+            defaultWorldState.Add("AxeSharpness", AxeSharpness, GetAxeSharpness);
 
             WorldState doWorkGoal = CreateGoalState("DoWork", WorldState.True, WorkingPriority);
             doWorkGoal.Add("IsMining", true, null);
@@ -79,10 +79,7 @@ namespace GOAP_Native
 
         private float AxeSharpeningPriority() { return AxeSharpness < 40 ? 1 : 0; }
 
-        private float SleepPriority()
-        {
-            return Stamina < 40 ? 100 : 0;
-        }
+        private float SleepPriority() { return Stamina < 40 ? 100 : 0; }
 
         public void ReleaseTarget() { _currentTarget = (int)TargetManager.TargetType.None; }
 

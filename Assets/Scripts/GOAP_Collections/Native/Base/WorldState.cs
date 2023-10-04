@@ -159,7 +159,7 @@ namespace GOAP_Native
             _stringBuilder.Append("States: ");
 
             foreach (KeyValuePair<string, IState> state in States)
-                _stringBuilder.AppendFormat("{0} ", state.ToString()); ///* : {1} */ //state.Key,
+                _stringBuilder.AppendFormat("{0} ", state.ToString());
 
             if (Priority != null)
                 _stringBuilder.AppendFormat("Priority: {0}", Priority());
